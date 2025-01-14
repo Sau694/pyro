@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Event</title>
+    <script src="service-style.js" defer></script>
+    <link rel="stylesheet" href="service-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Frank+Ruhl+Libre:wght@300..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Frank+Ruhl+Libre:wght@300..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="wedding-page">
+   
+
+    <div class="event-header">
+        <h1>Wedding Event Gallery</h1>
+        <h3>Make Your Wedding Day Unforgettable!</h3>
+        <p>
+            Celebrate your love with elegance and style!<br>
+            From grand decorations to exquisite floral arrangements, <br>
+            we create a magical atmosphere that perfectly complements your love story. <br>
+            Sit back and let us turn your dream wedding into a reality.
+        </p>
+        <h2>Service Price: ₹14999</h2>
+    </div>
+  
+    <div class="image-gallery">
+        <div class="image-card">
+            <img src="images/wedding1.png" alt="Wedding" class="open-img">
+           
+        </div>
+        <div class="image-card">
+            <img src="images/wedding2.png" alt="Wedding" class="open-img">
+           
+        </div>
+        <div class="image-card">
+            <img src="images/wedding3.png" alt="Wedding" class="open-img">
+           
+        </div>
+        <div class="image-card">
+            <img src="images/wedding4.png" alt="Wedding" class="open-img">
+            
+        </div>
+        <div class="image-card">
+            <img src="images/wedding5.png" alt="Wedding" class="open-img">
+            
+        </div>
+        <div class="image-card">
+            <img src="images/wedding6.png" alt="Wedding" class="open-img">
+           
+        </div>
+        <div class="image-card">
+            <img src="images/wedding7.png" alt="Wedding" class="open-img">
+           
+        </div>
+        <div class="image-card">
+            <img src="images/wedding8.png" alt="Wedding" class="open-img">
+            
+        </div>
+        <div class="image-card">
+            <img src="images/wedding9.png" alt="Wedding" class="open-img">
+            
+        </div>
+        <div class="image-card">
+            <img src="images/wedding10.png" alt="Wedding" class="open-img">
+           
+        </div>
+    </div>
+     <!-- Your Wedding Event content -->
+     <section id="wedding-service">
+        <!-- Cards Section -->
+        <div class="sub-service-cards">
+            <!-- Haldi Setup Card -->
+            <div class="service-card" onclick="window.location.href='haldi.html'">
+                <img src="images/haldi5.png" alt="Haldi Setup" class="card-image">
+                <h3>Haldi Setup</h3>
+                <button class="animated-button">View Details</button>
+            </div>
+            <!-- Gate Entry Card -->
+            <div class="service-card" onclick="window.location.href='gate-entry.html'">
+                <img src="images/gate_entry4.png" alt="Gate Entry" class="card-image">
+                <h3>Gate Entry</h3>
+                <button class="animated-button">View Details</button>
+            </div>
+
+    <!-- Fullscreen Modal for Image Viewing -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="service-script.js"></script>
+
+</body>
+</html>

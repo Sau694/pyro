@@ -1,0 +1,553 @@
+/* General page styles */
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1{
+    font-family: 'Frank Ruhl Libre', serif;
+     /* Line height for better readability */
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    color: #3d3b3b;
+  }
+
+
+ h2, h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 18px; 
+    color: #161515;
+    margin: 0;
+}
+
+
+/* Page-specific Backgrounds and Animations */
+.birthday-page {
+    background-color: #ffc0cb; /* Light purple background for Birthday */
+    animation: fadeIn 1.5s ease-in;
+}
+
+.wedding-page {
+    background: linear-gradient(to bottom, #fde4e4, #f3dfbd);
+    animation: gradientShift 8s infinite alternate;
+}
+.vidhii-mandap-page{
+    background: linear-gradient(to bottom, #fde4e4, #f3dfbd);
+    animation: gradientShift 8s infinite alternate;
+}
+
+.special-entry-page {
+    background: linear-gradient(to bottom, #ffb8b8, #e8a0f3);
+    animation: gradientShift 8s infinite alternate;
+}
+
+.baby-shower-page {
+    background: linear-gradient(to bottom, #d2eeee, #ebd3e6);
+    animation: gradientShift 8s infinite alternate;
+}
+.haldi-page {
+    background: linear-gradient(to bottom, #cdffbd, #ffbcf2);
+    animation: gradientShift 8s infinite alternate;
+}
+.gate-entry-page {
+    background: linear-gradient(to bottom, #f8bbbb, #fff7ab);
+    animation: gradientShift 8s infinite alternate;
+}
+
+/* Gradient animation for non-Birthday pages */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Animation for smooth page appearance */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* for birthday header */
+.birthday-header {
+    background: white; /* White background only for text */
+    padding: 20px; /* Space inside the box */
+    margin: 0 auto; /* Center horizontally */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 700px; /* Limit width of the content */
+    text-align: center; /* Center-align text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    line-height: 1.6; /* Improve spacing between lines */
+}
+.birthday-header h3{
+    font-family: 'Pacifico', cursive;
+}
+
+
+/*sub card of haldi and gate*/
+.service-card h3{
+    font-family: 'Frank Ruhl Libre', serif;   
+    font-style: none;
+    color: #e91e63;
+}
+/* General styles for header text */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+h2 {font-family: 'Pacifico', cursive;
+    text-align: center;
+
+    font-size: 2rem;
+    color: #555;
+}
+
+h3 {font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #777;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 800px;
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Specific styles for the service price text */
+h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #e91e63; /* Highlight pricing with a different color */
+}
+
+/* Image gallery styles */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+   
+}
+
+/* Add styles for each image card */
+.image-card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border: solid 1px black;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+}
+
+.image-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Text overlay on image */
+.image-card .image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+    width: calc(100% - 20px);
+}
+
+/* Open Image Modal */
+/* Modal Styles (Unchanged) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    animation-duration: 0.3s;
+}
+
+#caption {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: #f1f1f1;
+}
+
+/* Open Modal Animation */
+@keyframes modalOpen {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-open-animation .modal-content {
+    animation-name: modalOpen;
+}
+
+/* Close Modal Animation */
+@keyframes modalClose {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+}
+
+.modal-close-animation .modal-content {
+    animation-name: modalClose;
+}
+
+/* Fade-in Animation for Modal Background */
+.modal-open-animation {
+    animation: fadeInBackground 0.3s;
+}
+
+@keyframes fadeInBackground {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+.modal-close-animation {
+    animation: fadeOutBackground 0.3s;
+}
+
+@keyframes fadeOutBackground {
+    from {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+/* Full-screen view styling */
+.full-screen-view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.full-screen-view.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.full-screen-view img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    animation: zoom-in 0.5s ease-in-out;
+}
+
+.back-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+    animation: slide-in-left 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes zoom-in {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/*wedding card haldiand gate catd*/
+
+
+/* Section Styling */
+#wedding-service {
+    padding: 20px;
+    text-align: center;
+}
+
+.event-header {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.event-header h1 {
+    font-size: 2.5rem;
+    color: #d53f8c;
+}
+
+.event-header h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.event-header p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.event-header h2 {
+    font-size: 1.8rem;
+    color: #28a745;
+    margin-top: 10px;
+}
+
+/* Cards Section */
+.sub-service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.service-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.animated-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.animated-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+/* style for video in special entry*/
+.video-section {
+    text-align: center;
+    margin: 30px auto;
+    position: relative;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    max-width: 90%; /* Adjust container width */
+    margin: 0 auto; /* Center container */
+}
+
+.video-container video {
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure video doesn't exceed container width */
+    height: auto; /* Keep natural video height */
+    max-height: 500px; /* Restrict video height */
+    object-fit: contain; /* Ensure the full video is visible */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+.video-section h3 {
+    font-family: 'Pacifico', cursive;
+    color: #333;
+    margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+    .video-container video {
+        max-width: 100%;
+        max-height: 300px;
+    }
+    .video-container {
+        padding: 10px;
+    }
+}
+
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.video-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.video-slide video {
+    width: 70%;
+    height: auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.video-slide p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none; /* Allow clicks only on buttons */
+}
+
+.carousel-nav button {
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s;
+    pointer-events: auto; /* Enable clicks on buttons */
+}
+
+.carousel-nav button:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.carousel-nav .prev {
+    position: absolute;
+    left: 10px;
+}
+
+.carousel-nav .next {
+    position: absolute;
+    right: 10px;
+}

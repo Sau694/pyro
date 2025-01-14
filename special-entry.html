@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Entry Event</title>
+    <script src="service-style.js" defer></script>
+    <link rel="stylesheet" href="service-style.css">
+   
+    
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Frank+Ruhl+Libre:wght@300..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Frank+Ruhl+Libre:wght@300..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body class="special-entry-page">
+    <!-- Your Special Entry Event content -->
+    <div class="event-header">
+        <h1>Special Entry Event Gallery</h1>
+        <h3>Make Your Special Entry Unforgettable!</h3>
+        <p>
+            From grand entrances to personalized surprises, <br>
+            we ensure your entry is one of a kind! <br>
+            Whether it's a red carpet, fireworks, or something unique, <br>
+            we design a spectacular experience that makes your moment special.
+        </p>
+        <h2>Service Price: ₹9999</h2>
+    </div>
+  
+    <!--  Video Section  -->
+    <div class="video-section">
+        <h3>Watch Our Special Entry Moments</h3>
+        <div class="video-container">
+            <div class="carousel">
+                <!-- Video 1 -->
+                <div class="video-slide">
+                    <video controls>
+                        <source src="videos/special_entry1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Experience the magic of our unique special entries through this video!</p>
+                </div>
+                <!-- Video 2 -->
+                <div class="video-slide">
+                    <video controls>
+                        <source src="videos/special_entry2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Discover the charm of a heartfelt entry with this video!</p>
+                </div>
+                <!-- Video 3 -->
+                <div class="video-slide">
+                    <video controls>
+                        <source src="videos/special_entry3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Relive the elegance of our events with this entry moment!</p>
+                </div>
+                <!-- Video 4 -->
+                <div class="video-slide">
+                    <video controls>
+                        <source src="videos/special_entry4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Feel the energy of an exciting entry in this video!</p>
+                </div>
+                <!-- Video 5 -->
+                <div class="video-slide">
+                    <video controls>
+                        <source src="videos/special_entry5.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Experience the elegance of our dream entries in this video!</p>
+                </div>
+                <!-- Video 6 -->
+                <div class="video-slide">
+                    <video controls>
+                        <source src="videos/special_entry6.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Watch the magic of unforgettable moments in this video!</p>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="image-gallery">
+        <div class="image-card">
+            <img src="images/special_entry1.png" alt="Special Entry" class="open-img">
+            <div class="image-text">Red Carpet Entry - ₹4000</div>
+        </div>
+        <div class="image-card">
+            <img src="images/special_entry2.png" alt="Special Entry" class="open-img">
+            <div class="image-text">Fireworks and Music - ₹4000</div>
+        </div>
+        <div class="image-card">
+            <img src="images/special_entry3.png" alt="Special Entry" class="open-img">
+            <div class="image-text">Classic Royal Entry - ₹4000</div>
+        </div>
+        <div class="image-card">
+            <img src="images/special_entry4.png" alt="Special Entry" class="open-img">
+            <div class="image-text">Cultural Grand Entry - ₹4000</div>
+        </div>
+        <div class="image-card">
+            <img src="images/special_entry5.png" alt="Special Entry" class="open-img">
+            <div class="image-text">Floral Arch Entrance - ₹4000</div>
+        </div>
+        <div class="image-card">
+            <img src="images/special_entry6.png" alt="Special Entry" class="open-img">
+            <div class="image-text">Luxury Vehicle Entry - ₹4000</div>
+        </div>
+    </div>
+
+    <!-- Fullscreen Modal for Image Viewing -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="service-script.js"></script>
+</body>
+
+
+</html>
